@@ -27,7 +27,7 @@ describe('<MenuLink />', () => {
     const { container } = renderTheme(
       <MenuLink link="http://localhost">Children</MenuLink>,
     );
-    expect(container).toMatchInlineSnapshot(`
+    expect(container.firstChild).toMatchInlineSnapshot(`
       .c0 {
         display: block;
         -webkit-text-decoration: none;
@@ -41,7 +41,7 @@ describe('<MenuLink />', () => {
       .c0::after {
         content: '';
         position: absolute;
-        bottom: 0;
+        bottom: 0.75rem;
         left: 50%;
         width: 0;
         height: 0.2rem;
@@ -55,15 +55,13 @@ describe('<MenuLink />', () => {
         width: 50%;
       }
 
-      <div>
-        <a
-          class="c0"
-          href="http://localhost"
-          target="_self"
-        >
-          Children
-        </a>
-      </div>
+      <a
+        class="c0"
+        href="http://localhost"
+        target="_self"
+      >
+        Children
+      </a>
     `);
   });
 });
