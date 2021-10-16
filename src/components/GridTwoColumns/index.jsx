@@ -14,7 +14,7 @@ export const GridTwoColumns = ({
     <SectionBackground background={background}>
       <Styled.Container background={background}>
         <Styled.TextContainer>
-          <Heading uppercase size="huge" colorDark={!background}>
+          <Heading uppercase size="huge" colorDark={!background} as="h2">
             {title}
           </Heading>
           <Text>{text}</Text>
