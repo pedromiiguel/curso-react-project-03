@@ -1,16 +1,11 @@
-/* eslint-disable no-unused-vars */
+// eslint-disable-next-line no-unused-vars
 import P from 'prop-types';
 import * as Styled from './styles';
 import { SectionBackground } from '../SectionBackground';
 import { Heading } from '../Heading';
 import { Text } from '../Text';
 
-export const GridSection = ({
-  title,
-  description,
-  grid,
-  background = false,
-}) => {
+export const GridImage = ({ title, description, grid, background = false }) => {
   return (
     <SectionBackground background={background}>
       <Styled.Container>
@@ -20,11 +15,8 @@ export const GridSection = ({
         <Text>{description}</Text>
         <Styled.Grid>
           {grid.map((el) => (
-            <Styled.GridElement key={el.title}>
-              <Heading size="medium" colorDark={!background} as="h3">
-                {el.title}
-              </Heading>
-              <Text>{el.description}</Text>
+            <Styled.GridElement key={el.srcImage}>
+              <Styled.Image src={el.srcImage} alt={el.altText} />
             </Styled.GridElement>
           ))}
         </Styled.Grid>
@@ -33,13 +25,13 @@ export const GridSection = ({
   );
 };
 
-GridSection.propTypes = {
+GridImage.propTypes = {
   title: P.string.isRequired,
   description: P.string.isRequired,
   grid: P.arrayOf(
     P.shape({
-      title: P.string.isRequired,
-      description: P.string.isRequired,
+      altText: P.string.isRequired,
+      srcImage: P.string.isRequired,
     }),
   ).isRequired,
   background: P.bool,
