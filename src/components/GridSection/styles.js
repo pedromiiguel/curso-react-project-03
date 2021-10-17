@@ -14,7 +14,9 @@ export const Container = styled.div`
 export const Grid = styled.div`
   ${({ theme }) => css`
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); */
+    grid-template-columns: 1fr 1fr 1fr;
+
     gap: ${theme.spacings.large};
     counter-reset: grid-counter;
 
@@ -27,6 +29,7 @@ export const Grid = styled.div`
 export const GridElement = styled.div`
   ${({ theme }) => css`
     ${HeadingContainer} {
+      width: 80%;
       position: relative;
       left: 5rem;
     }

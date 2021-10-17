@@ -23,12 +23,13 @@ exports[`<GridSection /> should render grid section with background 1`] = `
 
 .c7 {
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 3.2rem;
   counter-reset: grid-counter;
 }
 
 .c8 .c3 {
+  width: 80%;
   position: relative;
   left: 5rem;
 }
@@ -68,6 +69,12 @@ exports[`<GridSection /> should render grid section with background 1`] = `
 @media (max-width:768px) {
   .c4 {
     font-size: 4.0rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c7 {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -166,12 +173,13 @@ exports[`<GridSection /> should render grid section without background 1`] = `
 
 .c7 {
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 3.2rem;
   counter-reset: grid-counter;
 }
 
 .c8 .c3 {
+  width: 80%;
   position: relative;
   left: 5rem;
 }
@@ -211,6 +219,12 @@ exports[`<GridSection /> should render grid section without background 1`] = `
 @media (max-width:768px) {
   .c4 {
     font-size: 4.0rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c7 {
+    grid-template-columns: 1fr;
   }
 }
 
