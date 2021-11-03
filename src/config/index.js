@@ -1,3 +1,3 @@
 export default {
-  url: 'http://localhost:1337/pages/?slug=landing-page',
+  url: 'https://api-landing-pages.herokuapp.com/pages/?slug=landing-page',
 };
