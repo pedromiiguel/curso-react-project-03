@@ -20,5 +20,3 @@ export const mapData = (pagesData = [{}]) => {
     };
   });
 };
-
-console.log(mapData());

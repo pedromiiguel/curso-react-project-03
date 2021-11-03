@@ -7,11 +7,12 @@ import { Text } from '../Text';
 export const GridTwoColumns = ({
   title,
   text,
-  srcImage,
+  srcImg,
   background = false,
+  sectionId = '',
 }) => {
   return (
-    <SectionBackground background={background}>
+    <SectionBackground background={background} sectionId={sectionId}>
       <Styled.Container background={background}>
         <Styled.TextContainer>
           <Heading uppercase size="huge" colorDark={!background} as="h2">
@@ -20,7 +21,7 @@ export const GridTwoColumns = ({
           <Text>{text}</Text>
         </Styled.TextContainer>
         <Styled.ImageContainer>
-          <Styled.Image src={srcImage} alt={title} />
+          <Styled.Image src={srcImg} alt={title} />
         </Styled.ImageContainer>
       </Styled.Container>
     </SectionBackground>
@@ -30,6 +31,7 @@ export const GridTwoColumns = ({
 GridTwoColumns.propTypes = {
   title: P.string.isRequired,
   text: P.string.isRequired,
-  srcImage: P.string.isRequired,
+  srcImg: P.string.isRequired,
   background: P.bool,
+  sectionId: P.string,
 };

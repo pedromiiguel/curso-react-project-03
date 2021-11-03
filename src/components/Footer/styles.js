@@ -5,6 +5,8 @@ import { Container as SectionContainer } from '../SectionContainer/styles';
 
 export const Container = styled.footer`
   ${({ theme }) => css`
+    width: 100%;
+    word-break: break-word;
     text-align: center;
     border-top: 0.1rem solid ${theme.colors.mediumGray};
 

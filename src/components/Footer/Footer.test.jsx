@@ -15,9 +15,12 @@ describe('<Footer />', () => {
         max-width: 120rem;
         margin: 0 auto;
         padding: 3.2rem;
+        width: 100%;
       }
 
       .c0 {
+        width: 100%;
+        word-break: break-word;
         text-align: center;
         border-top: 0.1rem solid #DDDDDD;
       }

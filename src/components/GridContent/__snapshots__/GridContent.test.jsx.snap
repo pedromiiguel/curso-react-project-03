@@ -29,6 +29,7 @@ exports[`<GridContent /> should render grid content 1`] = `
   max-width: 120rem;
   margin: 0 auto;
   padding: 3.2rem;
+  width: 100%;
 }
 
 .c3 {
@@ -44,6 +45,7 @@ exports[`<GridContent /> should render grid content 1`] = `
 <div>
   <div
     class="c0"
+    id=""
   >
     <div
       class="c1"
@@ -187,6 +189,7 @@ exports[`<GridContent /> should render grid content 2`] = `
   max-width: 120rem;
   margin: 0 auto;
   padding: 3.2rem;
+  width: 100%;
 }
 
 .c3 {
@@ -202,6 +205,7 @@ exports[`<GridContent /> should render grid content 2`] = `
 <div>
   <div
     class="c0"
+    id=""
   >
     <div
       class="c1"
